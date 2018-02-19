@@ -1,15 +1,13 @@
-SOCIAL AUTH GOOGLE MODULE
-
 CONTENTS OF THIS FILE
 ---------------------
 
  * Introduction
  * Requirements
- * Recommended modules
  * Installation
  * Configuration
  * How it works
  * Support requests
+ * Maintainers
 
 INTRODUCTION
 ------------
@@ -24,22 +22,16 @@ This module requires the following modules:
  * Social Auth (https://drupal.org/project/social_auth)
  * Social API (https://drupal.org/project/social_api)
 
-
-RECOMMENDED MODULES
--------------------
-
- * Composer Manager (https://www.drupal.org/project/composer_manager):
-   This module will help to install the League PHP library and Mailru base library for the league,
-   which are the libraries required to make user authentication.
-
 INSTALLATION
 ------------
 
  * Download Mailru Base Library for TheLeague OAuth2 PHP library
-   (https://github.com/thephpleague/oauth2-mailru). We recommend to use
-   Composer Manager module to install the library.
+   (https://github.com/thephpleague/oauth2-mailru).
 
  * Install the dependencies: Social API and Social Auth.
+
+ * Run composer to install the dependencies.
+   composer require "drupal/social_auth_mailru"
 
  * Install as you would normally install a contributed Drupal module. See:
    https://drupal.org/documentation/install/modules-themes/modules-8
@@ -76,18 +68,14 @@ SUPPORT REQUESTS
 Before posting a support request, carefully read the installation
 instructions provided in module documentation page.
 
-Before posting a support request, check Composer Manager status report at
-admin/reports/composer-manager. This status page will show the Mailru The League OAuth2 Base
-PHP library version if Drupal can detect it.
-
 Before posting a support request, check Recent log entries at
 admin/reports/dblog
 
 Once you have done this, you can post a support request at module issue queue:
-https://www.drupal.org/node/2841076
+https://www.drupal.org/project/issues/social_auth_mailru
 
 When posting a support request, please inform what does the status report say
-at admin/reports/composer-manager and if you were able to see any errors in
+at admin/reports/dblog and if you were able to see any errors in
 Recent log entries.
 
 MAINTAINERS
@@ -96,3 +84,4 @@ MAINTAINERS
 Current maintainers:
  * Getulio Sánchez (gvso) - https://www.drupal.org/u/gvso
  * Himanshu Dixit (himanshu-dixit) - https://www.drupal.org/u/himanshu-dixit
+ * Kifah Meeran (MaskyS) - https://drupal.org/u/maskys
